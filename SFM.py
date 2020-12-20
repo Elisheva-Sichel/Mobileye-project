@@ -30,7 +30,6 @@ def prepare_3D_data(prev_container, curr_container, focal, pp):
     R, foe, tZ = decompose((curr_container))
     return norm_prev_pts, norm_curr_pts, R, foe, tZ
 
-
 def calc_3D_data(norm_prev_pts, norm_curr_pts, R, foe, tZ):
     norm_rot_pts = rotate(norm_prev_pts, R)
     pts_3D = []
