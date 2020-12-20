@@ -19,6 +19,5 @@ class Controller:
         self.tfl_manage = TflManager(meta_data['principle_point'], meta_data["flx"], egomotion)
 
     def run(self):
-
         for index, frame in enumerate(self.frame_list):
             self.tfl_manage.on_frame(frame, index)
