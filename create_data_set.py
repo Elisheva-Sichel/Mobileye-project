@@ -6,7 +6,6 @@ import os
 import zipfile
 import glob
 
-
 def open_zipfile():
     set_ = zipfile.ZipFile('C:/Users/RENT/Desktop/sets/gtFine_trainvaltest.zip', 'r')
     set_.extractall(path="labels/")
