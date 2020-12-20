@@ -93,7 +93,7 @@ def show_image_and_gt(image, objs, fig_num=None):
             plt.legend()
 
 
-# ==============================TEST=====================================
+# ==============================TEST====================================
 def test_find_tfl_lights(image_path, json_path=None, fig_num=None):
     image = np.array(Image.open(image_path))
     if json_path is None:
