@@ -1,12 +1,11 @@
 from controller import Controller
 
-
 def create_play_list(clip_name, folder_path, frames_number):
     with open(clip_name + ".pls", 'w') as file_writer:
         file_writer.write(folder_path + "/" + clip_name + ".pkl\n")
         for i in range(frames_number):
             file_writer.write(folder_path + "/" + clip_name + "_00000" + str(i) + "_leftImg8bit.png\n")
-
+            
 
 def main():
     # create_play_list("dusseldorf_000049", "C:/Users/RENT/Desktop/dissuldorf_49",6)
