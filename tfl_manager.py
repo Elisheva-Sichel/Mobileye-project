@@ -4,6 +4,7 @@ import numpy as np
 from PIL import Image
 from tensorflow.keras.models import load_model
 
+
 from candidates import Candidates
 from find_lights import find_tfl_lights
 from create_data_set import crop_image
